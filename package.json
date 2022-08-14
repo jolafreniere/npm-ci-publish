@@ -2,5 +2,8 @@
   "name": "npm-ci-publish",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  }
 }
