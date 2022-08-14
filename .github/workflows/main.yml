@@ -17,9 +17,7 @@ jobs:
   publish-gpr:
     needs: build
     runs-on: ubuntu-latest
-    permissions:
-      packages: write
-      contents: read
+    steps:
       - run: npm publish
         steps:
           - uses: actions/checkout@v3
