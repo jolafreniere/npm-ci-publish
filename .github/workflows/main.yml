@@ -1,3 +1,5 @@
+name: Node.js Package
+
 name: Create tagged release
 on:
   push:
@@ -26,9 +28,6 @@ jobs:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
           scope: "@jolafreniere"
-      - uses: actions/labeler@v4
-        with:
-          repo-token: "${{ secrets.GITHUB_TOKEN }}"
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
