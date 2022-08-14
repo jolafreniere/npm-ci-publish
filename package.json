@@ -1,6 +1,6 @@
 {
   "name": "@jolafreniere/npm-ci-publish",
-  "version": "1.0.3",
+  "version": "1.0.4-beta.1",
   "main": "index.js",
   "license": "MIT",
   "publishConfig": {
@@ -8,5 +8,8 @@
   },
   "devDependencies": {
     "version-bump-prompt": "^6.1.0"
+  },
+  "scripts": {
+    "versionBump": "bump --tag --push --all"
   }
 }

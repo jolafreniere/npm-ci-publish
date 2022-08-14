@@ -1,9 +1,8 @@
-name: Node.js Package
-
+name: Create tagged release
 on:
   push:
-    branches:
-      - master
+    tags:
+      - v*.*.*
 
 jobs:
   build:
